@@ -1,3 +1,4 @@
+import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
@@ -13,9 +14,9 @@ public class MaxTemperature {
             System.exit(-1);
         }
 
-        Job job = new Job();
+        Configuration conf = new Configuration();
+        Job job = Job.getInstance(conf, "Max Temperature");
         job.setJarByClass(MaxTemperature.class);
-        job.setJobName("Max Temperature");
 
         FileInputFormat.addInputPath(job, new Path(args[0]));
         FileOutputFormat.setOutputPath(job, new Path(args[1]));
