@@ -16,7 +16,7 @@ public class MaxTemperature {
 
         Configuration conf = new Configuration();
         Job job = Job.getInstance(conf, "Max Temperature");
-        // 不必明确指定 JAR 文件的名称，在 setJarByClass 方法中传递一个类即可，Hadoop 利用这个类来查找包含它的 JAR 文件
+        // 在 setJarByClass 方法中传递一个类即可，Hadoop 利用这个类来查找包含它的 JAR 文件
         job.setJarByClass(MaxTemperature.class);
 
         // 指定输入数据和输出数据的路径
