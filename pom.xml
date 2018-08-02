@@ -9,6 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>elephant-mr</module>
+        <module>elephant-hdfs</module>
     </modules>
     <packaging>pom</packaging>
     <name>elephant</name>
