@@ -10,6 +10,7 @@
     <modules>
         <module>elephant-mr</module>
         <module>elephant-hdfs</module>
+        <module>elephant-hive</module>
     </modules>
     <packaging>pom</packaging>
     <name>elephant</name>
