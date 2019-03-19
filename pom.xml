@@ -11,6 +11,7 @@
         <module>elephant-mr</module>
         <module>elephant-hdfs</module>
         <module>elephant-hive</module>
+        <module>elephant-hbase</module>
     </modules>
     <packaging>pom</packaging>
     <name>elephant</name>
